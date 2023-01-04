@@ -1,7 +1,6 @@
-body {
-    background-color: antiquewhite;
-}
 
-.test-class{
+.my-container{
     background-color: antiquewhite;
+    border-radius: 20px;
+    padding: 20px;
 }
