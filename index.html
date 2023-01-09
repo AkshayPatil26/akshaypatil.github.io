@@ -17,13 +17,7 @@
     <div class="container my-container">
       <a href="index.html">Home</a>&nbsp;&nbsp;
       <a href="aboutme.html">About Me</a>&nbsp;&nbsp;
-      <h2>Hello World</h2>
-      <p>
-        I'm Akshay Patil.<br />
-        I'm currently taking Google UX Design Professional Certificate Course
-        from Coursera.<br />
-        And this is my experimental portfolio website.
-      </p>
+</br>
       <a
         href="//24timezones.com/Mumbai/time"
         style="text-decoration: none"
@@ -45,18 +39,41 @@
       <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
       <!-- Babel Script -->
       <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
+      <!-- <h6>The website is under construction.... 🚀</h6><br/> -->
       <script type="text/jsx">
+
         const app = document.getElementById('app');
 
-        function Header(){
-          return(<h6>The website is under construction.... 🚀</h6>)
+        function Notice({addon}){
+          console.log(addon)
+          return(<div>
+            <h6>The is an experimantal website 🚀 <br/>{addon ? addon : 'This page is rendered with React JS'}</h6>
+          </div>)
+        }
+
+        function Greeting(){
+          return(<h2>Hello World</h2>)
+        }
+
+        function Intro(){
+          return ( 
+            <div>
+              <p>
+            I'm Akshay Patil.<br />
+            I'm currently taking Google UX Design Professional Certificate Course
+            from Coursera and diving deep into React JS.<br />
+            And this is my experimental portfolio website.
+          </p>
+        </div>)
         }
 
         function HomePage(){
           return(
             <div>
-              <Header/>
+              
+              <Greeting/>
+              <Intro/>
+              <Notice addon=""/>
             </div>
           )
         }
