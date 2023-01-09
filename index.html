@@ -48,7 +48,20 @@
 
       <script type="text/jsx">
         const app = document.getElementById('app');
-        ReactDOM.render(<h6>The website is under construction.. 🚀</h6>, app);
+
+        function Header(){
+          return(<h6>The website is under construction.... 🚀</h6>)
+        }
+
+        function HomePage(){
+          return(
+            <div>
+              <Header/>
+            </div>
+          )
+        }
+
+        ReactDOM.render(<HomePage/>, app);
       </script>
     </div>
 
