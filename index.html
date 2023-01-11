@@ -68,11 +68,30 @@
         }
 
         function HomePage(){
+          const [likes, setLikes]= React.useState(0)
+
+          const movies = ['taxi driver', 'dead poet society', 'liberal arts']
+          
+          function handleClick(){
+            setLikes(likes + 1);
+            console.log("like is clicked")
+          }
+
+
           return(
             <div>
               
               <Greeting/>
               <Intro/>
+
+              <p>Movies I have recently watched:</p>
+              <ul>
+               {
+                movies.map((movieName)=>(<li key={name}>{movieName}</li>))
+                
+              }
+              </ul>
+              <button onClick={handleClick}>like {likes}</button>
               <Notice addon=""/>
             </div>
           )
