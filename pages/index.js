@@ -8,7 +8,7 @@ function Notice({ addon }) {
     <div>
       <h6>
         The is an experimantal website 🚀 <br />
-        {addon ? addon : "This page is rendered with React JS"}
+        {addon ? addon : "This page is rendered with React JS and Next.js"}
       </h6>
     </div>
   );
