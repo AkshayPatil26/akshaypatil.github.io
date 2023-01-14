@@ -25,7 +25,7 @@ function Intro() {
         I'm Akshay Patil.
         <br />
         I'm currently taking Google UX Design Professional Certificate Course
-        from Coursera and diving deep into React JS.
+        from Coursera and diving deep into React JS(Nextjs). 
         <br />
         And this is my experimental portfolio website.
       </p>
